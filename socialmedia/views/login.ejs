@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login.Instagram</title>
+  <link href="https://fonts.cdnfonts.com/css/instagram-sans-2" rel="stylesheet">               
+  <link rel="stylesheet" href="/stylesheets/login.css">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+<div class="container">
+  <div class="content-container">
+    <div class="log-in-container">
+    <img class="instagram-logo" src="https://assets.codepen.io/6060109/ig-logo.png" alt="Instagram logo" />
+      <form action="/login" method="post">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+          
+        <input type="submit" value="Log in">
+        <div class="line-break">
+          <div class="line"></div>
+          <div class="or">or</div>
+          <div class="line"></div>
+        </div>
+        <div class="facebook-login-container">
+          <a class="facebook-login" href="#"><img class="facebook-icon" src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png"> Log in with Facebook</a>
+        </div>
+        <div class="password-error">
+          <%  if(error.length > 0) { %>
+            <p class="passerror"> <%= error %> </p>
+            <% }   %>
+        </div>
+        
+        <div class="forgot-password">
+          <a href="#">Forgot password?</a>
+        </div>
+      </form>
+    </div>
+    <div class="sign-up-container">
+      <p>Don't have an account? <a href="/register">Sign up</a></p>
+    </div>
+    <div class="get-the-app">
+      <p>Get the app.</p>
+      <div class="get-the-app-image-container">
+        <div>
+          <a href="#"><img class="get-the-app-image" src="https://assets.codepen.io/6060109/IG-Google-Play-Button.png" alt="Get it on Google Play"></a>
+        </div>
+        <div >
+          <a href="#"><img class="get-the-app-image" src="https://assets.codepen.io/6060109/IG-app-store-button.png" alt="Get it on the Apple App Store"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="image-container">
+  </div>
+  <footer>
+    <ul>
+      <li><a href="#">Meta</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">API</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Top Accounts</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Instagram Lite</a></li>
+      <li><a href="#">Threads</a></li>
+      <li><a href="#">Contact Uploading & Non-Users</a></li>
+      <li><a href="#">Meta Verifed</a></li>
+    </ul>
+    <div class="language-copyright-container">
+      <select>
+        <option>English</option>
+        <option>French</option>
+        <option>German</option>
+        <option>Spanish</option>
+      </select>
+      <p>&copy; 2023 Instagram from Meta</p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
